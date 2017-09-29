@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>SMGMT</display-name>
+  <display-name>MSaleERP</display-name>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
+   <servlet>
     <servlet-name>Index</servlet-name>
     <servlet-class>com.servletStore.common.DoLoginAction</servlet-class>
   </servlet>
@@ -20,28 +20,22 @@
     <servlet-name>LoginAction</servlet-name>
     <url-pattern>/LoginAction</url-pattern>
   </servlet-mapping>
+<!--  ***************************************************************  HIMANSHU****************************************************************** -->
   <servlet>
-    <servlet-name>Caste</servlet-name>
-    <servlet-class>com.servletStore.caste.controller.Caste</servlet-class>
+    <servlet-name>AddClass</servlet-name>
+    <servlet-class>com.servletStore.settings.classRoom.controller.AddClass</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Caste</servlet-name>
-    <url-pattern>/Caste</url-pattern>
+    <servlet-name>AddClass</servlet-name>
+    <url-pattern>/AddClass.do</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>Campus</servlet-name>
-    <servlet-class>com.servletStore.campus.controller.Campus</servlet-class>
+    <servlet-name>Student</servlet-name>
+    <servlet-class>com.servletStore.student.controller.Student</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Campus</servlet-name>
-    <url-pattern>/Campus</url-pattern>
+    <servlet-name>Student</servlet-name>
+    <url-pattern>/Student.do</url-pattern>
   </servlet-mapping>
-	<servlet>
-    <servlet-name>AddSchool</servlet-name>
-    <servlet-class>com.servletStore.settings.school.controller.School</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AddSchool</servlet-name>
-    <url-pattern>/AddSchool</url-pattern>
-  </servlet-mapping>
+<!-- *************************************************************   END HIMANSHU *************************************************************** -->
 </web-app>
